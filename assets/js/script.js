@@ -1,6 +1,6 @@
 var slideItem = 0;
 window.onload = function() {
-	setInterval(passarSlide, 10000);
+	setInterval(passarSlide, 7000);
 
 	var slidewidth = document.getElementById("slideshow").offsetWidth;
 	var objs = document.getElementsByClassName("slide");
@@ -30,6 +30,9 @@ function toggleMenu() {
 
 	if(menu.style.display == 'none' || menu.style.display == '') {
 		menu.style.display = "block";
+		menu2.style.display = 'none';
+		menu3.style.display = 'none';
+		menu4.style.display = 'none';
 	} else {
 		menu.style.display = "none";
 	}
