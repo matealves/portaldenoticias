@@ -635,6 +635,10 @@ color: #FFF;
         width: 40%;
     }
 
+    .menu ul {
+        width: 160px;
+    }
+
     .ultimasnoticias {
         display: none;
     }
@@ -651,13 +655,14 @@ color: #FFF;
     .noticiaArea1{
         width: 320px;
         height: auto;
-        margin-bottom: 25px;
     }
 
     .noticiaArea2 {
         width: 300px;
         margin: auto;
         float: none;
+        clear: both;
+        padding-top: 16px;
     }
 
     .noticiaitem {
@@ -694,6 +699,7 @@ color: #FFF;
 
     .prov {
         display: block;
+        margin-bottom:70px;
     }
 
     .slideinfoTitulo {
