@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <title>M1 - Portal de Notícias</title>
+</head>
+
+<body>
+    <div class="topo">
+        <div class="topoInt">
+            <div class="topoLeft">
+                <ul>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Anuncie Aqui</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="topo2">
+        <div class="topo2Int">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo" width="70">
+            </div>
+            <div class="banner">
+                <a href="#"> <img src="assets/images/rockinrio.jpg" alt="RockInRio"> </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menuInt">
+            <img src="assets/images/menu.png" class="menumobile" alt="menu" width="23" height="23"
+                onclick="toggleMenu()">
+            <div class="menuRight">
+                <input type="image" src="assets/images/lupa.png" class="lupa" width="16" height="16">
+                <input type="text" name="busca" class="topoBusca" placeholder="Pesquisar...">
+            </div>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Economia</a></li>
+                <li onclick="toggleMenu2()"><a href="#">Entretenimento</a>
+                    <img src="assets/images/arrowdown.png" alt="seta" width="10">
+                    <div class="submenu" id="menu2">
+                        <a href="#">
+                            <div class="submenuItem">BBB 22</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Novelas</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Famosos</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Redes Sociais</div>
+                        </a>
+                    </div>
+                </li>
+                <li onclick="toggleMenu3()"><a href="#">Esportes</a>
+                    <img src="assets/images/arrowdown.png" alt="seta" width="10">
+                    <div class="submenu" id="menu3">
+                        <a href="#">
+                            <div class="submenuItem">F1</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Futebol</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">NBA</div>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#">Geral</a></li>
+                <li onclick="toggleMenu4()"><a href="#">Notícias</a>
+                    <img src="assets/images/arrowdown.png" alt="seta" width="10">
+                    <div class="submenu" id="menu4">
+                        <a href="#">
+                            <div class="submenuItem">Política</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Trânsito</div>
+                        </a>
+                        <a href="#">
+                            <div class="submenuItem">Previsão do Tempo</div>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#">Polícia</a></li>
+                <li><a href="#">Vídeos</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ultimasnoticias">
+        <div class="ultumasnoticiasInt">
+            <div class="ultiNoticiasArea">
+                <div class="ultNoticiasTitulo">DESTAQUE</div>
+                <div class="ultiNoticiasText">Créditos ao <a href="https://g1.globo.com/"> G1 - Portal de Notícias da
+                        Globo </a> e ao<a href="https://ge.globo.com/"> GE - Globo Esporte. </a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="containerInt">
+            <div class="leftSide">
+                <div class="slideshow" id="slideshow">
+                    <div class="slidebolinhas">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                    </div>
+                    <div class="slideshowarea">
+                        <a href="#">
+                            <div class="slide" style="background-image: url('assets/images/new1.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfoTitulo">Uber vai mostrar destino e valor aos motoristas antes
+                                        de aceitarem corridas</div>
+                                    <div class="slideinfoSubtitulo">Com o recurso, os condutores cadastrados no
+                                        aplicativo
+                                        vão ter a opção de recusar as corridas oferecidas. <br>Antes, eles só viam uma
+                                        estimativa do percurso até o ponto de encontro do usuário.</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slide" style="background-image: url('assets/images/new2.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfoTitulo">Petrobras: presidentes executivo e do conselho
+                                        indicados na assembleia</div>
+                                    <div class="slideinfoSubtitulo">O governo ainda não escolheu os nomes. O prazo até a
+                                        assembleia é curto, de uma semana.<br>Mas Albuquerque garante que não trabalha
+                                        com adiamento.</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="slide" style="background-image: url('assets/images/new3.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfoTitulo">Prefeito de SP se diz aberto a 'dialogar e contribuir'
+                                        com blocos de carnaval</div>
+                                    <div class="slideinfoSubtitulo">Ricardo Nunes se manifestou após carta de
+                                        organizadores
+                                        de blocos pedindo que a festa não seja proibida. Circuito de carnaval de rua na
+                                        cidade de São Paulo, no entanto, segue cancelado.</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widTitulo">NOTÍCIAS</div>
+                    <div class="widConteudo">
+                        <div class="noticiaArea1">
+                            <a href="#">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new5.jpg" alt="">
+                                    </div>
+                                    <div class="noticiatitulo">O vereador Gabriel Monteiro (PL) é alvo de uma operação
+                                        da Polícia Civil do RJ nesta quinta-feira (7).</div>
+                                    <div class="noticiainfo dias">2 horas atrás</div>
+                                    <div class="noticiainfo">Dentro do inquérito sobre o vazamento de um vídeo íntimo de
+                                        Gabriel fazendo sexo com uma adolescente de 15 anos. </div>
+                                </div>
+                        </div> </a>
+                        <div class="noticiaArea2">
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new6.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Incêndio atinge galpão na Zona Norte de SP</div>
+                                    <div class="noticiainfo dias">5 horas atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new7.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Justiça determina 90 dias para Prefeitura de SP
+                                        apresentar projetos contra às enchentes</div>
+                                    <div class="noticiainfo dias">3 horas atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new8.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Polícia indicia donas e funcionária de escola de SP por
+                                        maus-tratos</div>
+                                    <div class="noticiainfo dias">1 dia atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new9.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Otan vai enviar mais uma leva de 'ampla variedade' de
+                                        armas para a Ucrânia</div>
+                                    <div class="noticiainfo dias">2 dias atrás</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widTitulo">ESPORTES</div>
+                    <div class="widConteudo">
+                        <div class="noticiaArea1">
+                            <a href="#">
+                                <div class="noticiaitem noticiabig">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new4.jpg" alt="">
+                                    </div>
+                                    <div class="noticiatitulo">Fora de finais, Rigoni tenta se reencontrar no São Paulo
+                                        e pode ter chance em Sul-Americana</div>
+                                    <div class="noticiainfo dias">1 dia atrás</div>
+                                    <div class="noticiainfo">Vice- artilheiro em 2021, argentino não enfrentou o
+                                        Palmeiras, mas deve jogar na quinta.</div>
+                                </div>
+                        </div> </a>
+                        <div class="noticiaArea2">
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new10.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">UFC: Aljamain Sterling projeta retorno após lesões e
+                                        avisa: "Eu sou melhor e vou provar"</div>
+                                    <div class="noticiainfo dias">21 minutos atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new11.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Atlético-MG supera desgaste, quebra tabus e mostra força
+                                        em estreia na Libertadores</div>
+                                    <div class="noticiainfo dias">3 horas atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new12.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">Movimentação nos bastidores. Flamengo estreia no
+                                        Brasileiro contra o Atlético-GO.</div>
+                                    <div class="noticiainfo dias">1 dia atrás</div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="noticiaitem">
+                                    <div class="noticiaimg">
+                                        <img src="assets/images/new13.jpg" alt="" width="80" height="80">
+                                    </div>
+                                    <div class="noticiatitulo">CBF sonha com Guardiola para substituir Tite e possível
+                                        salário de <strong>R$ 61 mi </strong>anuais</div>
+                                    <div class="noticiainfo dias">2 horas atrás</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+                <div class="widget prov">
+                    <div class="widTitulo">SOCIAL</div>
+                    <div class="widConteudo social">
+                        <a href="mailto:contatomateusalves@hotmail.com" target="_blank"><img
+                                src="assets/images/outlook.png" alt="Twitter" width="26" height="26"></a>
+                        <a href="https://api.whatsapp.com/send?phone=+5511966616365" target="_blank"><img
+                                src="assets/images/whatsapp.png" alt="YouTube" width="26" height="26"></a>
+                        <a href="https://www.linkedin.com/in/mateusalvesds/" target="_blank"><img
+                                src="assets/images/linkedin.png" alt="Facebook" width="26" height="26"></a>
+                        <a href="https://www.instagram.com/mate.alves/" target="_blank"><img
+                                src="assets/images/instagram.png" alt="RSS" width="26" height="26"></a>
+                        <a href="https://github.com/matealves" target="_blank"><img src="assets/images/github_preto.png"
+                                alt="GitHub" width="26" height="26"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rightSide">
+                <div class="widget">
+                    <div class="widTitulo">SOCIAL</div>
+                    <div class="widConteudo social">
+                        <a href="mailto:contatomateusalves@hotmail.com" target="_blank"><img
+                                src="assets/images/outlook.png" alt="Twitter" width="26" height="26"></a>
+                        <a href="https://api.whatsapp.com/send?phone=+5511966616365" target="_blank"><img
+                                src="assets/images/whatsapp.png" alt="YouTube" width="26" height="26"></a>
+                        <a href="https://www.linkedin.com/in/mateusalvesds/" target="_blank"><img
+                                src="assets/images/linkedin.png" alt="Facebook" width="26" height="26"></a>
+                        <a href="https://www.instagram.com/mate.alves/" target="_blank"><img
+                                src="assets/images/instagram.png" alt="RSS" width="26" height="26"></a>
+                        <a href="https://github.com/matealves" target="_blank"><img src="assets/images/github_preto.png"
+                                alt="GitHub" width="26" height="26"></a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widTitulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="widConteudo">
+                        <div class="noticiaItem">
+                            <a href="#">O vereador Gabriel Monteiro (PL) é alvo de uma operação da Polícia Civil do RJ
+                                nesta quinta-feira (7). </a>
+                        </div>
+                        <div class="noticiaItem">
+                            <a href="#">Conselho da Câmara do Rio abre processo ético-disciplinar contra Gabriel
+                                Monteiro. </a>
+                        </div>
+                        <div class="widConteudo">
+                            <div class="noticiaItem">
+                                <a href="#">Incêndio atinge galpão na Zona Norte de SP </a>
+                            </div>
+                            <div class="widConteudo">
+                                <div class="noticiaItem">
+                                    <a href="#">Justiça determina 90 dias para Prefeitura de SP apresentar projetos
+                                        contra às enchentes </a>
+                                </div>
+                                <div class="widConteudo">
+                                    <div class="noticiaItem">
+                                        <a href="#">Polícia indicia donas e funcionária de escola de SP por maus-tratos
+                                        </a>
+                                    </div>
+                                    <div class="widConteudo">
+                                        <div class="noticiaItem">
+                                            <a href="#">Otan vai enviar mais uma leva de 'ampla variedade' de armas para
+                                                a Ucrânia </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="widTitulo">PUBLICIDADE</div>
+                                    <div class="widConteudo">
+                                        <a href="#"><img src="assets/images/publicidade2.jpg" alt="new1"
+                                                width="270"></a>
+                                    </div>
+                                </div>
+                                <div class="widget">
+                                    <div class="widTitulo">CURTA NO FACEBOOK</div>
+                                    <div class="widConteudo face">
+                                        <iframe
+                                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmocinhoartdesign%2F&tabs&width=340&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                            width="270" height="70" style="border:none;overflow:hidden" scrolling="no"
+                                            frameborder="0" allowfullscreen="true"
+                                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+</html>
